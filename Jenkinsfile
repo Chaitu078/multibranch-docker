@@ -16,7 +16,7 @@ pipeline {
             steps {
                 script {
                     withDockerRegistry(credentialsId: 'dockerhub') {
-                        sh 'docker push chaitanya078/paytm:movie'
+                        sh 'docker push chaitanya/paytm:movie'
                     }
                 }
             }
